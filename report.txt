@@ -1,0 +1,64 @@
+IMG Prompts
+-----------
+Gemini:
+For the Leather Collars & Leashes (Product Focus):
+
+    generate an img of Bespoke Leather Collar & Leash Sets
+
+        The Concept: Premium full-grain Italian leather hardware, customized with hand-stamped brass nameplates or foil-embossed monograms.
+
+        Boutique Angle: Offer an in-store "Fitting Bar" where pups get measured on the spot, and owners can choose their leather shade, brass/rose-gold hardware, and accent stitching.
+        focus on the product
+
+For the Puppy Socialization & Etiquette Soirées:
+
+    generate an img of
+    . Private Puppy Socialization & Etiquette "Soirées"
+
+        The Concept: Small-group, highly curated socialization classes held in the boutique after hours, focusing on gentle manners, polite greetings, and positive reinforcement.
+
+        Boutique Angle: Treat it like an exclusive club; include complimentary "puppacinos" for the dogs and sparkling water or coffee for the owners while they mingle.
+        focus on the product
+
+For the Customized Orthopedic Lounge Beds:
+
+    gen an img of Customized Orthopedic Lounge Beds
+
+        The Concept: Premium memory-foam dog beds designed to look like high-end furniture rather than pet supplies.
+
+        Boutique Angle: Provide a fabric swatches catalog featuring designer upholstery fabrics (bouclé, velvet, linen) so the pet bed seamlessly matches the owner's home interior design.
+        focus on the product
+
+For the Seasonal "Couture" Apparel & Weather Gear:
+
+    Seasonal "Couture" Apparel & Weather Gear
+
+        The Concept: Limited-edition seasonal clothing collections ranging from cashmere-blend cable knit sweaters for winter to lightweight linen cooling bandanas for summer.
+
+        Boutique Angle: Drop collections in restricted quantities (e.g., "The Autumn Heritage Collection") to create a sense of exclusivity and urgency among fashion-forward pet parents.
+        (followed by your follow-up command: focus on the product)
+
+For the Tailored Nutrition & Supplement Consultation:
+
+    Tailored Nutrition & Supplement Consultation
+
+        The Concept: A one-on-one consultation service where staff assess a dog's age, breed, weight, and activity level to build a custom rotation of raw food toppers, bone broths, and targeted daily supplements.
+
+        Boutique Angle: Position your staff as pet wellness advisors. Provide customers with a beautifully designed weekly feeding tracker card to take home.
+        (followed by your follow-up commands: focus on the product / focus on product)
+
+For the Organic "Spa Day" Grooming & Coat Infusions:
+
+    . Organic "Spa Day" Grooming & Coat Infusions
+
+        The Concept: A low-stress, appointment-only grooming service utilizing botanical, pH-balanced shampoos, followed by a soothing therapeutic paw-balm massage and a signature pet-safe cologne mist.
+
+        Boutique Angle: Market it as an experiential wellness retreat rather than a standard wash—complete with calming aromatherapy and soft classical music in the grooming suite.
+
+For the Artisanal, Small-Batch Functional Treats:
+
+        Artisanal, Small-Batch Functional Treats
+
+        The Concept: Gourmet bakery items made in-house or sourced from local organic bakers, formulated with health-boosting superfoods (like turmeric for joint health, chamomile for anxiety, or spirulina for coat shine).
+
+        Boutique Angle: Sold unpackaged in a stylish "barkery" deli case where owners can mix-and-match treats by weight in custom stamped paper bags.
