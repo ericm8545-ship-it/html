@@ -93,7 +93,7 @@ margin-bottom: 5dvw;
 }
 
 .wrapper {
-width: min(90dvw, 50ch);
+width: min(90dvw, 1200px);
 margin-inline: auto;
 }
 
@@ -157,8 +157,8 @@ overflow: hidden;
 
 .cardContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Forces exactly 2 columns */
+    grid-template-columns: repeat(3, 1fr); /* Forces exactly 2 columns */
     gap: 1.5rem; /* Adds space between your cards */
     width: 100%; /* Ensures it spans the full width available */
-    margin-inline: auto;
+    margin-inline: ceh;
 }
