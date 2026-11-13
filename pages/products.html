@@ -22,7 +22,7 @@ background-size: cover;
 height: 150px;
 }
 </style>
-<title>Products</title>
+<title>Products | Urban Paws</title>
 </head>
 <body>
 
@@ -48,276 +48,169 @@ height: 150px;
 
 <div class="wrapper">
 <section>
+<!-- Category Filter Buttons -->
+<div class="filter-buttons" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;">
+    <button class="filter-btn active" data-filter="all">All Products</button>
+    <button class="filter-btn" data-filter="grooming">Grooming & Spa</button>
+    <button class="filter-btn" data-filter="accessories">Accessories</button>
+    <button class="filter-btn" data-filter="food">Food & Treats</button>
+</div>
+
 <div class="cardContainer">
 
-<div class="card">
+<div class="card" data-category="grooming">
 <div class="cardImage">
-<img src="../images/dogImage.png" alt="">
+<img src="../images/dogImage.png" alt="Deluxe Grooming">
+<div class="price-tag">€99.99</div>
 </div>
 <div class="cardTitle">
 <h2>Deluxe Grooming Package</h2>
 </div>
 <div class="cardText">
-<p>Have the cleanest dog in your neighbourhood!</p>
-<p>€65</p>
+<p>Have the cleanest dog in your neighbourhood! Complete bath, haircut, nail trim, and professional styling.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="food">
 <div class="cardImage">
-<img src="../images/dogBasket.png" alt="">
+<img src="../images/dogBasket.png" alt="Treat Basket">
+<div class="price-tag">€45</div>
 </div>
 <div class="cardTitle">
 <h2>Boutique Dog Treat Basket</h2>
 </div>
 <div class="cardText">
-<p>Be the best dog owner you could be!</p>
+<p>Be the best dog owner you could be! A curated selection of organic, hand-crafted treats your pup will adore.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="accessories">
 <div class="cardImage">
-<img src="../images/collars.jpg" alt="">
+<img src="../images/collars.jpg" alt="Collar and Leash">
+<div class="price-tag">€29.99</div>
 </div>
 <div class="cardTitle">
 <h2>Leather Collar & Leash Set</h2>
 </div>
 <div class="cardText">
-<p>Don't let your dog on the loose!</p>
+<p>Don't let your dog on the loose! Durable, premium-crafted leather designed for stylish and secure daily walks.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="grooming">
 <div class="cardImage">
-<img src="../images/etiquette.jpg" alt="">
+<img src="../images/etiquette.jpg" alt="Etiquette Class">
+<div class="price-tag">€79.99</div>
 </div>
 <div class="cardTitle">
 <h2>Private Dog Socialisation & Etiquette Class</h2>
 </div>
 <div class="cardText">
-<p>Have the most well-mannered dog ever!</p>
+<p>Have the most well-mannered dog ever! One-on-one professional training tailored to your pet's behavioral needs.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="accessories">
 <div class="cardImage">
-<img src="../images/orthopodeic.jpg" alt="">
+<img src="../images/orthopodeic.jpg" alt="Lounge Bed">
+<div class="price-tag">€49.99</div>
 </div>
 <div class="cardTitle">
 <h2>Orthopedic Lounge Beds</h2>
 </div>
 <div class="cardText">
-<p>Let your furry friends relax in peace...</p>
+<p>Let your furry friends relax in peace. High-density therapeutic foam providing ultimate joint support and comfort.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="accessories">
 <div class="cardImage">
-<img src="../images/gear.jpg" alt="">
+<img src="../images/gear.jpg" alt="Dog Clothes">
+<div class="price-tag">€19.99</div>
 </div>
 <div class="cardTitle">
 <h2>Seasonal Dog Clothes</h2>
 </div>
 <div class="cardText">
-<p>Be the best dog owner you could be!</p>
+<p>Be the best dog owner you could be! Cozy, fashionable sweaters and bandanas to keep them warm in style.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="food">
 <div class="cardImage">
-<img src="../images/mealPlan.jpg" alt="">
+<img src="../images/mealPlan.jpg" alt="Nutrition Plan">
+<div class="price-tag">€99.99</div>
 </div>
 <div class="cardTitle">
 <h2>Tailored Nutrition Consultation</h2>
 </div>
 <div class="cardText">
-<p>Be the best dog owner you could be!</p>
+<p>Be the best dog owner you could be! Expert dietary planning and custom meal recommendations for optimal health.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="grooming">
 <div class="cardImage">
-<img src="../images/spa.jpg" alt="">
+<img src="../images/spa.jpg" alt="Recovery Spa">
+<div class="price-tag">€99.99</div>
 </div>
 <div class="cardTitle">
 <h2>Dog Rest & Recover Spa</h2>
 </div>
 <div class="cardText">
-<p>Be the best dog owner you could be!</p>
+<p>Be the best dog owner you could be! Soothing therapeutic treatments and massage care designed to pamper your pet.</p>
 </div>
 </div>
 
-<div class="card">
+<div class="card" data-category="food">
 <div class="cardImage">
-<img src="../images/treats.jpg" alt="">
+<img src="../images/treats.jpg" alt="Handmade Treats">
+<div class="price-tag">€9.99</div>
 </div>
 <div class="cardTitle">
 <h2>Hand-made Dog Treats</h2>
 </div>
 <div class="cardText">
-<p>Be the best dog owner you could be!</p>
+<p>Be the best dog owner you could be! Delicious, freshly baked gourmet snacks made with wholesome, natural ingredients.</p>
 </div>
 </div>
 
 </div>
 </section>
+</div>
 
 <section>
-<h2 class="center">More information here</h2>
+<h2 class="center">Why Choose Urban Paws?</h2>
 <div class="columns wrapper">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore iure quibusdam laudantium corrupti commodi dicta enim tempore est reprehenderit, rerum nostrum officiis at nisi amet. Architecto fugit placeat explicabo?</p>
-<p>Tenetur quas illo beatae accusamus animi eaque obcaecati voluptatem esse hic repellat rerum culpa, inventore doloremque cum a facere praesentium odio, maxime aspernatur quisquam blanditiis ab! Beatae architecto aut necessitatibus.</p>
+<p>At Urban Paws, we believe every dog deserves exceptional care, premium nutrition, and stylish accessories. Our hand-picked selection ensures your four-legged family members live their happiest, healthiest lives by your side every single day.</p>
+<p>We partner with certified trainers, holistic veterinarians, and expert groomers to deliver unmatched quality. Whether you are looking for obedience training or luxury spa treatments, we provide a welcoming community dedicated to pet wellness.</p>
 </div>
 </section>
 
 <section class="pic1"></section>
 
 <section class="wrapper">
-<h2>More Stuff Here</h2>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, totam molestias! Odio <img src="../images/coffee cup.jpg" width="150px" class="left">praesentium amet iste earum exercitationem illo ipsam, eaque fugiat? Earum, pariatur accusantium ex aliquam consectetur reprehenderit dolore rem?</p>
-<p>Laboriosam a magni quidem, distinctio esse praesentium minima ad doloribus adipisci quis, accusamus reprehenderit sequi provident aperiam deserunt? Repellat asperiores nihil rerum nobis at necessitatibus quaerat et fugit eius unde!</p>
-<p>Dolore expedita facere nihil distinctio aliquam et dolor harum quidem voluptas facilis accusantium, sequi fugiat totam ipsa, vitae ab? Fugiat cupiditate obcaecati harum nemo iste iure, facilis error voluptatem pariatur.</p>
+<h2>Our Boutique Philosophy</h2>
+<p>Happy Pets. Happier Lives. This tagline drives everything we do at our flagship store. From organic dietary options to orthopedic comfort solutions, every product is rigorously tested and approved by pet care specialists.</p>
+<p>We pride ourselves on creating a warm, eco-friendly environment where owners can consult with experts, discover sustainable pet products, and treat their companions to the absolute finest services available on the market.</p>
+<p>Join our growing community of passionate dog lovers today. Stop by our retail lounge to explore our seasonal collections in person, or book a private consultation with our professional training and nutrition teams.</p>
 </section>
-
-<section>
-<div class="cardContainer">
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>45.00 - Complete bath, haircut, nail trim, and ear cleaning for your dog.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Very very very very very very long Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eaque pariatur vero officiis a corporis? Est a perferendis doloribus ipsam?dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>A slightly longer Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, nisi.dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="cardImage">
-<img src="../images/animals.jpg" alt="">
-</div>
-<div class="cardTitle">
-<h2>Card Title Here</h2>
-</div>
-<div class="cardText">
-<p>Lorem ipsum dolor sit amet.</p>
-</div>
-</div>
-
-</div>
-</section>
-</div>
 
 <footer>
 <ul>
-<li><a href=""><i class="fa fa-instagram"></i></a></li>
-<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-<li><a href=""><i class="fa fa-snapchat"></i></a></li>
-<li><a href=""><i class="fa fa-youtube"></i></a></li>
+<li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="https://snapchat.com" target="_blank"><i class="fa fa-snapchat"></i></a></li>
+<li><a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
 </ul>
 
 <h2>Contact Details</h2>
-<h3>123 Main Street</h3>
-<h3>Your Town</h3>
-<h4>Phone: 123456789</h4>
+<h3>42 Pawprint Avenue, Kensington</h3>
+<h3>Dublin 8, Ireland</h3>
+<h4>Phone: +353 (01) 496-8822</h4>
+<h4>Email: hello@urbanpawsboutique.ie</h4>
 </footer>
+
+<script src="../js/script.js"></script>
 </body>
 </html>

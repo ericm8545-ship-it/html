@@ -74,6 +74,51 @@ nav .logo .brand-name {
   letter-spacing: 1px;
 }
 
+.card {
+  position: relative;
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  background-color: #556b2fa4;
+  color: white;
+  border: solid thin white;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Makes the scaling smooth */
+}
+
+/* This triggers when your mouse hovers over any card */
+/* This triggers when your mouse hovers over any card */
+.card:hover {
+  transform: scale(1.03); /* Gently increases the card size by 3% */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a subtle depth shadow */
+  z-index: 10; /* Ensures the hovered card pops above neighboring cards */
+  cursor: pointer; /* Changes the cursor to a clicking hand */
+}
+
+.card .cardText {
+  margin-bottom: 1rem;
+  margin-inline: 1rem;
+  padding-right: 60px; /* Leaves clear space for the price tag so text won't slide under it */
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #37461f;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Keeps the price tag cleanly on top */
+}
+
 nav a.active {
   background-color: #37461f79; /* A darker/highlighted green background */
   color: #ffffff; /* Brighter text color */
@@ -155,10 +200,31 @@ section {
 }
 
 .columns {
-  @media screen and (min-width: 601px) {
-    display: grid;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 601px) {
+  .columns {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.filter-btn {
+  background-color: #37461f44;
+  border: 2px solid #37461f;
+  color: rgb(27, 27, 27);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover, 
+.filter-btn.active {
+  background-color: #37461f;
+  color: white;
 }
 
 .card {
