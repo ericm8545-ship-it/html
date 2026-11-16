@@ -265,3 +265,215 @@ section {
   width: 100%;
   margin-inline: auto;
 }
+
+/* =========================================
+   ABOUT US PAGE STYLES (Person 3 - Rahel)
+   ========================================= */
+
+:root {
+  --forest-green: #1E3A2F;
+  --warm-beige: #F5EFE6;
+  --terracotta: #C86D51;
+  --charcoal: #2B2B2B;
+  --white: #FFFFFF;
+}
+
+.about-story-section,
+.mission-section,
+.values-section,
+.about-banner {
+  margin: 3rem 0;
+}
+
+.section-tag {
+  display: inline-block;
+  background-color: var(--warm-beige);
+  color: var(--terracotta);
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  color: var(--forest-green);
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+}
+
+.about-text p {
+  color: var(--charcoal);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mission-box {
+  background-color: var(--warm-beige);
+  border-left: 6px solid var(--terracotta);
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mission-box h2 {
+  color: var(--forest-green);
+  margin-bottom: 0.75rem;
+}
+
+.mission-box p {
+  color: var(--charcoal);
+  font-size: 1.15rem;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section-subtitle {
+  color: var(--charcoal);
+  margin-bottom: 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.value-card {
+  background-color: var(--white);
+  border: 1px solid #e6dfd5;
+  border-top: 4px solid var(--forest-green);
+  border-radius: 10px;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card i {
+  font-size: 2rem;
+  color: var(--terracotta);
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  color: var(--forest-green);
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+}
+
+.value-card p {
+  color: var(--charcoal);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.about-banner {
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.banner-content h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.8rem;
+}
+
+.banner-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.banner-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--terracotta);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: var(--warm-beige);
+  color: var(--forest-green);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES (Tablet & Mobile)
+   ========================================= */
+
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    height: 240px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-box {
+    padding: 1.5rem;
+  }
+
+  nav .nav-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+}
