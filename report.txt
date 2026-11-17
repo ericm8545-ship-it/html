@@ -62,3 +62,26 @@ For the Artisanal, Small-Batch Functional Treats:
         The Concept: Gourmet bakery items made in-house or sourced from local organic bakers, formulated with health-boosting superfoods (like turmeric for joint health, chamomile for anxiety, or spirulina for coat shine).
 
         Boutique Angle: Sold unpackaged in a stylish "barkery" deli case where owners can mix-and-match treats by weight in custom stamped paper bags.
+
+
+
+
+        ========================================================================
+DESIGN & PROTOTYPING (Rahil - Person 3)
+========================================================================
+
+1. Design Thinking Process (Ideate & Prototype)
+During the Ideate and Prototype stages, the team translated user needs—busy pet owners looking for trustworthy grooming, holistic care, and quality accessories—into a clear, four-page site structure: Home (index.html), Products (pages/products.html), About Us (pages/about.html), and Contact (pages/contact.html). Low-fidelity wireframes were sketched first to establish a consistent navigation bar, hero header, content grid, and footer across all pages before moving into HTML and CSS prototyping.
+
+2. Brand Identity & Logo Design
+The Urban Paws brand identity was designed to communicate warmth, reliability, and natural care. A clean paw-and-house emblem paired with bold uppercase sans-serif typography ("URBAN PAWS") was created for high legibility across desktop headers and mobile screens, inverted to crisp white against the dark navigation bar.
+
+3. Colour Palette & Typography
+- Forest Green (#1E3A2F): Primary brand colour representing nature, trust, and pet wellness.
+- Warm Beige (#F5EFE6): Soft background accent for mission callouts and tags, creating a welcoming, organic feel.
+- Terracotta (#C86D51): Warm highlight colour used for primary buttons, icons, and borders to draw user attention.
+- Charcoal (#2B2B2B) & White (#FFFFFF): High-contrast body text and clean card surfaces for readability and accessibility.
+- Typography: Clean system sans-serif stack with clear visual hierarchy (H1–H4 headings, uppercase section tags, and 1.6–1.7 line-height body copy).
+
+4. Responsive Layout & About Us Implementation
+The About Us page (pages/about.html) was built using semantic HTML5 (<nav>, <header>, <main>, <section>, <article>, <footer>) and styled in CSS/styles.css using CSS Grid and Flexbox. Media queries at 900px and 650px adapt the two-column story layout and four-column core values grid into two-column tablet and single-column mobile views.

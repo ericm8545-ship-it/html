@@ -1,0 +1,17 @@
+Development Evidence Log - Rahil (Person 3)
+Project: Urban Paws Website
+
+1. Branding & Assets:
+   - Created Urban Paws logo and visual identity (Forest Green #1E3A2F, Warm Beige #F5EFE6, Terracotta #C86D51, Charcoal #2B2B2B).
+   - Verified image assets inside /images/ (logo.png, spa.jpg, etiquette.jpg, dogImage.png).
+
+2. Wireframing & Page Architecture (pages/about.html):
+   - Structured semantic sections: Shared Navigation, Hero Header, Company History/Our Story (2-column grid), Our Mission callout, Core Values (4-card grid), and Call-to-Action Banner.
+   - Linked relative paths (../CSS/styles.css, ../index.html, products.html, contact.html) to match the repository folder structure.
+
+3. Responsive CSS Styling (CSS/styles.css):
+   - Added scoped About Us classes and CSS variables matching the group palette.
+   - Implemented responsive breakpoints (@media max-width: 900px and 650px) for tablet and mobile viewports.
+
+4. Version Control (Git & GitHub):
+   - Cloned shared repository, pulled updates from main, staged personal deliverables, and pushed commits to origin/main.
