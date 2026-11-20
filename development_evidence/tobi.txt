@@ -1,0 +1,27 @@
+Development Evidence Log - Rahil (Person 1)
+PROJECT: URBAN PAWS Website
+
+1. Homepage Development:
+   -Worked on the homepage (index.html) by adding my assigned section to the 
+   existing website.
+   -Added the HTML code for my section without changing the other sections
+   developed by my teammates.
+   -Added the relevant CSS styling to CSS/styles.css to ensure my section
+   matched the overall website design, then integrated my work into the existing project structure.
+
+2. CSS Development and Integration
+   -Edited CSS/styles.css to include the styling required for my homepage 
+   section, I encountered a CSS merge conflict when synchronising my local project with the 
+   latest version of the group's GitHub repository.
+   -Reviewed and resolved the merge conflict before committing the changes. Ensured that the CSS changes were integrated into the main branch.
+
+3. GitHub Collaboration
+   -Connected my local project folder to our group's GitHub repository.
+   -I initially encountered a rejected push because the remote repository contained newer changes.
+   -Used git pull --no-rebase origin main to retrieve and integrate the latest
+   changes.
+   -Resolved the merge confict in CSS/styles.css.
+   -Staged and committed the resolved file using: git add CSS/styles.css 
+   git commit -m "Resolve CSS merge conflict"
+   -Uploaded my changes using git push
+   
