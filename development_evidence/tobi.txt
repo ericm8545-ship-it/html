@@ -1,4 +1,4 @@
-Development Evidence Log - Rahil (Person 1)
+Development Evidence Log - Tobi
 PROJECT: URBAN PAWS Website
 
 1. Homepage Development:
@@ -24,4 +24,4 @@ PROJECT: URBAN PAWS Website
    -Staged and committed the resolved file using: git add CSS/styles.css 
    git commit -m "Resolve CSS merge conflict"
    -Uploaded my changes using git push
-   
+
