@@ -22,7 +22,7 @@ background-size: cover;
 height: 150px;
 }
 </style>
-<title>Products</title>
+<title>Contact Us - URBAN PAWS</title>
 </head>
 <body>
 
@@ -40,54 +40,91 @@ height: 150px;
         </ul>
     </div>
 </nav>
+
 <header>
 <h1>Contact</h1>
 <h2>URBAN PAWS</h2>
 </header>
 
 <div class="wrapper">
-<section>
-<div class="cardContainer">
+    <section>
+        <h2>Contact Urban Paws</h2>
+        <p>Get in touch with us for pet grooming, products, and pet care services. We would love to hear from you and your furry friends!</p>
+    </section>
 
+    <section>
+        <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> 01 234 5678</p>
+        <p><strong>Email:</strong> info@urbanpaws.example</p>
+        <p><strong>Location:</strong> Dublin, Ireland</p>
+    </section>
 
+    <section>
+        <h2>Send Us an Enquiry</h2>
 
+        <form id="contactForm">
+            <div style="margin-bottom: 15px;">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email" style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="service">Service Interested In:</label><br>
+                <select id="service" name="service" style="width: 100%; padding: 8px; margin-top: 5px;">
+                    <option value="grooming">Dog Grooming</option>
+                    <option value="accessories">Pet Accessories</option>
+                    <option value="care">Pet Care Services</option>
+                    <option value="other">General Enquiry</option>
+                </select>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required placeholder="How can we help you and your pet?" style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+            </div>
+            
+            <button type="submit" style="padding: 10px 20px; cursor: pointer;">Submit Enquiry</button>
+        </form>
+
+        <!-- Confirmation message element for JavaScript -->
+        <p id="formMessage" style="margin-top: 15px; font-weight: bold;"></p>
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item" style="margin-bottom: 15px;">
+            <h3><button type="button" class="faq-question">What are your opening hours?</button></h3>
+            <p class="faq-answer" style="display: none;">We are open Monday to Saturday from 9:00 AM to 6:00 PM.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3><button type="button" class="faq-question">Do I need to book a grooming appointment in advance?</button></h3>
+            <p class="faq-answer" style="display: none;">Yes, we recommend booking at least 3 days in advance to secure your preferred time slot.</p>
+        </div>
+    </section>
 </div>
-</section>
-
-<section>
-<h2 class="center">More information here</h2>
-<div class="columns wrapper">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur labore iure quibusdam laudantium corrupti commodi dicta enim tempore est reprehenderit, rerum nostrum officiis at nisi amet. Architecto fugit placeat explicabo?</p>
-<p>Tenetur quas illo beatae accusamus animi eaque obcaecati voluptatem esse hic repellat rerum culpa, inventore doloremque cum a facere praesentium odio, maxime aspernatur quisquam blanditiis ab! Beatae architecto aut necessitatibus.</p>
-</div>
-</section>
-
-<section class="pic1"></section>
-
-<section class="wrapper">
-<h2>More Stuff Here</h2>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, totam molestias! Odio <img src="../images/coffee cup.jpg" width="150px" class="left">praesentium amet iste earum exercitationem illo ipsam, eaque fugiat? Earum, pariatur accusantium ex aliquam consectetur reprehenderit dolore rem?</p>
-<p>Laboriosam a magni quidem, distinctio esse praesentium minima ad doloribus adipisci quis, accusamus reprehenderit sequi provident aperiam deserunt? Repellat asperiores nihil rerum nobis at necessitatibus quaerat et fugit eius unde!</p>
-<p>Dolore expedita facere nihil distinctio aliquam et dolor harum quidem voluptas facilis accusantium, sequi fugiat totam ipsa, vitae ab? Fugiat cupiditate obcaecati harum nemo iste iure, facilis error voluptatem pariatur.</p>
-</section>
-
-<section>
-<div class="cardContainer">
-
-
 
 <footer>
-<ul>
-<li><a href=""><i class="fa fa-instagram"></i></a></li>
-<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-<li><a href=""><i class="fa fa-snapchat"></i></a></li>
-<li><a href=""><i class="fa fa-youtube"></i></a></li>
-</ul>
+    <ul>
+        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fa fa-snapchat"></i></a></li>
+        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+    </ul>
 
-<h2>Contact Details</h2>
-<h3>123 Main Street</h3>
-<h3>Your Town</h3>
-<h4>Phone: 123456789</h4>
+    <h2>Contact Details</h2>
+    <h3>123 Main Street, Dublin</h3>
+    <h4>Phone: 01 234 5678</h4>
 </footer>
+
+<!-- Links your team's shared JavaScript file -->
+<script src="../js/script.js"></script>
+
 </body>
 </html>
