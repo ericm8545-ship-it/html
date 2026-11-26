@@ -10,16 +10,129 @@
 <link rel="stylesheet" href="../CSS/styles.css">
 <style>
 header {
-background-image: url(../images/background.jpeg);
-background-size: cover;
-background-position: bottom center;
-height: 150px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 220px;
+  padding: 2.5rem 1.5rem;
+  background-image:
+    linear-gradient(rgba(22, 28, 18, 0.65), rgba(22, 28, 18, 0.65)),
+    url(../images/background.jpeg);
+  background-size: cover;
+  background-position: bottom center;
+  color: #ffffff;
 }
 
-.pic1 {
-background-image: url(../images/background2.webp);
-background-size: cover;
-height: 150px;
+header h1,
+header h2 {
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+header h2 {
+  margin-top: 0.35rem;
+  font-weight: 400;
+}
+
+/* Full-width alternating white & cream bands (matching Contact & Home pages) */
+.products-band-white,
+.products-band-cream {
+  width: 100%;
+  padding: 3.25rem 1.5rem;
+  margin: 0;
+}
+
+.products-band-white {
+  background-color: #ffffff;
+  color: #1f2419;
+  border-bottom: 1px solid #e8dfd1;
+}
+
+.products-band-cream {
+  background-color: #f7f3eb;
+  color: #1f2419;
+  border-bottom: 1px solid #e4d8c5;
+}
+
+.products-tag {
+  display: inline-block;
+  background-color: #f0eee7;
+  color: #37461f;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.products-heading {
+  color: #2b3818;
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.products-subtitle {
+  color: #4a4f44;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+/* Two-column text layout for Why Choose Urban Paws */
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.why-choose-card {
+  background-color: #faf7f2;
+  border: 1px solid #e8dfd1;
+  border-radius: 12px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.why-choose-card p {
+  color: #1f2419;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Philosophy text card */
+.philosophy-card {
+  background-color: #ffffff;
+  border: 1px solid #e6dccb;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  max-width: 900px;
+  margin: 1.75rem auto 0;
+}
+
+.philosophy-card p {
+  color: #1f2419;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.philosophy-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (width < 850px) {
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-band-white,
+  .products-band-cream {
+    padding: 2.5rem 1rem;
+  }
 }
 </style>
 <title>Products | Urban Paws</title>
@@ -42,173 +155,198 @@ height: 150px;
 </nav>
 
 <header>
-<h1>Products</h1>
-<h2>from our boutique range</h2>
+    <h1>Products</h1>
+    <h2>from our boutique range</h2>
 </header>
 
-<div class="wrapper">
-<section>
-<!-- Category Filter Buttons -->
-<div class="filter-buttons" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;">
-    <button class="filter-btn active" data-filter="all">All Products</button>
-    <button class="filter-btn" data-filter="grooming">Grooming & Spa</button>
-    <button class="filter-btn" data-filter="accessories">Accessories</button>
-    <button class="filter-btn" data-filter="food">Food & Treats</button>
-</div>
+<main>
 
-<div class="cardContainer">
+    <!-- PRODUCT CATALOG SECTION (White Band) -->
+    <section class="products-band-white">
+        <div class="wrapper">
+            <!-- Category Filter Buttons -->
+            <div class="filter-buttons" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 2rem; flex-wrap: wrap;">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="grooming">Grooming &amp; Spa</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+                <button class="filter-btn" data-filter="food">Food &amp; Treats</button>
+            </div>
 
-<div class="card" data-category="grooming">
-<div class="cardImage">
-<img src="../images/dogImage.png" alt="Deluxe Grooming">
-<div class="price-tag">€99.99</div>
-</div>
-<div class="cardTitle">
-<h2>Deluxe Grooming Package</h2>
-</div>
-<div class="cardText">
-<p>Have the cleanest dog in your neighbourhood! Complete bath, haircut, nail trim, and professional styling.</p>
-</div>
-</div>
+            <div class="cardContainer">
 
-<div class="card" data-category="food">
-<div class="cardImage">
-<img src="../images/dogBasket.png" alt="Treat Basket">
-<div class="price-tag">€45</div>
-</div>
-<div class="cardTitle">
-<h2>Boutique Dog Treat Basket</h2>
-</div>
-<div class="cardText">
-<p>Be the best dog owner you could be! A curated selection of organic, hand-crafted treats your pup will adore.</p>
-</div>
-</div>
+                <div class="card" data-category="grooming">
+                    <div class="cardImage">
+                        <img src="../images/dogImage.png" alt="Deluxe Grooming">
+                        <div class="price-tag">€99.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Deluxe Grooming Package</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Have the cleanest dog in your neighbourhood! Complete bath, haircut, nail trim, and professional styling.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="accessories">
-<div class="cardImage">
-<img src="../images/collars.jpg" alt="Collar and Leash">
-<div class="price-tag">€29.99</div>
-</div>
-<div class="cardTitle">
-<h2>Leather Collar & Leash Set</h2>
-</div>
-<div class="cardText">
-<p>Don't let your dog on the loose! Durable, premium-crafted leather designed for stylish and secure daily walks.</p>
-</div>
-</div>
+                <div class="card" data-category="food">
+                    <div class="cardImage">
+                        <img src="../images/dogBasket.png" alt="Treat Basket">
+                        <div class="price-tag">€45</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Boutique Dog Treat Basket</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Be the best dog owner you could be! A curated selection of organic, hand-crafted treats your pup will adore.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="grooming">
-<div class="cardImage">
-<img src="../images/etiquette.jpg" alt="Etiquette Class">
-<div class="price-tag">€79.99</div>
-</div>
-<div class="cardTitle">
-<h2>Private Dog Socialisation & Etiquette Class</h2>
-</div>
-<div class="cardText">
-<p>Have the most well-mannered dog ever! One-on-one professional training tailored to your pet's behavioral needs.</p>
-</div>
-</div>
+                <div class="card" data-category="accessories">
+                    <div class="cardImage">
+                        <img src="../images/collars.jpg" alt="Collar and Leash">
+                        <div class="price-tag">€29.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Leather Collar &amp; Leash Set</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Don't let your dog on the loose! Durable, premium-crafted leather designed for stylish and secure daily walks.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="accessories">
-<div class="cardImage">
-<img src="../images/orthopodeic.jpg" alt="Lounge Bed">
-<div class="price-tag">€49.99</div>
-</div>
-<div class="cardTitle">
-<h2>Orthopedic Lounge Beds</h2>
-</div>
-<div class="cardText">
-<p>Let your furry friends relax in peace. High-density therapeutic foam providing ultimate joint support and comfort.</p>
-</div>
-</div>
+                <div class="card" data-category="grooming">
+                    <div class="cardImage">
+                        <img src="../images/etiquette.jpg" alt="Etiquette Class">
+                        <div class="price-tag">€79.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Private Dog Socialisation &amp; Etiquette Class</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Have the most well-mannered dog ever! One-on-one professional training tailored to your pet's behavioral needs.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="accessories">
-<div class="cardImage">
-<img src="../images/gear.jpg" alt="Dog Clothes">
-<div class="price-tag">€19.99</div>
-</div>
-<div class="cardTitle">
-<h2>Seasonal Dog Clothes</h2>
-</div>
-<div class="cardText">
-<p>Be the best dog owner you could be! Cozy, fashionable sweaters and bandanas to keep them warm in style.</p>
-</div>
-</div>
+                <div class="card" data-category="accessories">
+                    <div class="cardImage">
+                        <img src="../images/orthopodeic.jpg" alt="Lounge Bed">
+                        <div class="price-tag">€49.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Orthopedic Lounge Beds</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Let your furry friends relax in peace. High-density therapeutic foam providing ultimate joint support and comfort.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="food">
-<div class="cardImage">
-<img src="../images/mealPlan.jpg" alt="Nutrition Plan">
-<div class="price-tag">€99.99</div>
-</div>
-<div class="cardTitle">
-<h2>Tailored Nutrition Consultation</h2>
-</div>
-<div class="cardText">
-<p>Be the best dog owner you could be! Expert dietary planning and custom meal recommendations for optimal health.</p>
-</div>
-</div>
+                <div class="card" data-category="accessories">
+                    <div class="cardImage">
+                        <img src="../images/gear.jpg" alt="Dog Clothes">
+                        <div class="price-tag">€19.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Seasonal Dog Clothes</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Be the best dog owner you could be! Cozy, fashionable sweaters and bandanas to keep them warm in style.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="grooming">
-<div class="cardImage">
-<img src="../images/spa.jpg" alt="Recovery Spa">
-<div class="price-tag">€99.99</div>
-</div>
-<div class="cardTitle">
-<h2>Dog Rest & Recover Spa</h2>
-</div>
-<div class="cardText">
-<p>Be the best dog owner you could be! Soothing therapeutic treatments and massage care designed to pamper your pet.</p>
-</div>
-</div>
+                <div class="card" data-category="food">
+                    <div class="cardImage">
+                        <img src="../images/mealPlan.jpg" alt="Nutrition Plan">
+                        <div class="price-tag">€99.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Tailored Nutrition Consultation</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Be the best dog owner you could be! Expert dietary planning and custom meal recommendations for optimal health.</p>
+                    </div>
+                </div>
 
-<div class="card" data-category="food">
-<div class="cardImage">
-<img src="../images/treats.jpg" alt="Handmade Treats">
-<div class="price-tag">€9.99</div>
-</div>
-<div class="cardTitle">
-<h2>Hand-made Dog Treats</h2>
-</div>
-<div class="cardText">
-<p>Be the best dog owner you could be! Delicious, freshly baked gourmet snacks made with wholesome, natural ingredients.</p>
-</div>
-</div>
+                <div class="card" data-category="grooming">
+                    <div class="cardImage">
+                        <img src="../images/spa.jpg" alt="Recovery Spa">
+                        <div class="price-tag">€99.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Dog Rest &amp; Recover Spa</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Be the best dog owner you could be! Soothing therapeutic treatments and massage care designed to pamper your pet.</p>
+                    </div>
+                </div>
 
-</div>
-</section>
-</div>
+                <div class="card" data-category="food">
+                    <div class="cardImage">
+                        <img src="../images/treats.jpg" alt="Handmade Treats">
+                        <div class="price-tag">€9.99</div>
+                    </div>
+                    <div class="cardTitle">
+                        <h2>Hand-made Dog Treats</h2>
+                    </div>
+                    <div class="cardText">
+                        <p>Be the best dog owner you could be! Delicious, freshly baked gourmet snacks made with wholesome, natural ingredients.</p>
+                    </div>
+                </div>
 
-<section>
-<h2 class="center">Why Choose Urban Paws?</h2>
-<div class="columns wrapper">
-<p>At Urban Paws, we believe every dog deserves exceptional care, premium nutrition, and stylish accessories. Our hand-picked selection ensures your four-legged family members live their happiest, healthiest lives by your side every single day.</p>
-<p>We partner with certified trainers, holistic veterinarians, and expert groomers to deliver unmatched quality. Whether you are looking for obedience training or luxury spa treatments, we provide a welcoming community dedicated to pet wellness.</p>
-</div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<section class="pic1"></section>
+    <!-- WHY CHOOSE URBAN PAWS (Warm Cream Band) -->
+    <section class="products-band-cream">
+        <div class="wrapper">
+            <div class="center">
+                <span class="products-tag">The Urban Paws Standard</span>
+                <h2 class="products-heading">Why Choose Urban Paws?</h2>
+                <p class="products-subtitle">Thoughtfully selected essentials and trusted care tailored for every dog.</p>
+            </div>
 
-<section class="wrapper">
-<h2>Our Boutique Philosophy</h2>
-<p>Happy Pets. Happier Lives. This tagline drives everything we do at our flagship store. From organic dietary options to orthopedic comfort solutions, every product is rigorously tested and approved by pet care specialists.</p>
-<p>We pride ourselves on creating a warm, eco-friendly environment where owners can consult with experts, discover sustainable pet products, and treat their companions to the absolute finest services available on the market.</p>
-<p>Join our growing community of passionate dog lovers today. Stop by our retail lounge to explore our seasonal collections in person, or book a private consultation with our professional training and nutrition teams.</p>
-</section>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <p>At Urban Paws, we believe every dog deserves exceptional care, premium nutrition, and stylish accessories. Our hand-picked selection ensures your four-legged family members live their happiest, healthiest lives by your side every single day.</p>
+                </div>
+                <div class="why-choose-card">
+                    <p>We partner with certified trainers, holistic veterinarians, and expert groomers to deliver unmatched quality. Whether you are looking for obedience training or luxury spa treatments, we provide a welcoming community dedicated to pet wellness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR BOUTIQUE PHILOSOPHY (White Band) -->
+    <section class="products-band-white">
+        <div class="wrapper">
+            <div class="center">
+                <span class="products-tag">Our Approach</span>
+                <h2 class="products-heading">Our Boutique Philosophy</h2>
+                <p class="products-subtitle">Happy Pets. Happier Lives.</p>
+            </div>
+
+            <div class="philosophy-card">
+                <p>Happy Pets. Happier Lives. This tagline drives everything we do at our flagship store. From organic dietary options to orthopedic comfort solutions, every product is rigorously tested and approved by pet care specialists.</p>
+                <p>We pride ourselves on creating a warm, eco-friendly environment where owners can consult with experts, discover sustainable pet products, and treat their companions to the absolute finest services available on the market.</p>
+                <p>Join our growing community of passionate dog lovers today. Stop by our retail lounge to explore our seasonal collections in person, or book a private consultation with our professional training and nutrition teams.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
 
 <footer>
-<ul>
-<li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
-<li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="https://snapchat.com" target="_blank"><i class="fa fa-snapchat"></i></a></li>
-<li><a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
-</ul>
+    <ul>
+        <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://snapchat.com" target="_blank"><i class="fa fa-snapchat"></i></a></li>
+        <li><a href="https://youtube.com" target="_blank"><i class="fa fa-youtube"></i></a></li>
+    </ul>
 
-<h2>Contact Details</h2>
-<h3>42 Pawprint Avenue, Kensington</h3>
-<h3>Dublin 8, Ireland</h3>
-<h4>Phone: +353 (01) 496-8822</h4>
-<h4>Email: hello@urbanpawsboutique.ie</h4>
+    <h2>Contact Details</h2>
+    <h3>42 Pawprint Avenue, Kensington</h3>
+    <h3>Dublin 8, Ireland</h3>
+    <h4>Phone: +353 (01) 496-8822</h4>
+    <h4>Email: hello@urbanpawsboutique.ie</h4>
 </footer>
 
 <script src="../js/script.js"></script>

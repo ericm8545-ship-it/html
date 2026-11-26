@@ -1,17 +1,26 @@
 Development Evidence Log - Rahil (Person 3)
 Project: Urban Paws Website
 
-1. Branding & Assets:
-   - Created Urban Paws logo and visual identity (Forest Green #1E3A2F, Warm Beige #F5EFE6, Terracotta #C86D51, Charcoal #2B2B2B).
-   - Verified image assets inside /images/ (logo.png, spa.jpg, etiquette.jpg, dogImage.png).
+1. Branding & Visual Identity:
+   - Created the Urban Paws logo and visual identity using the group colour palette: Forest Green (#1E3A2F / #37461F), Warm Beige / Cream (#F5EFE6 / #F7F3EB), Terracotta / Tan (#C86D51 / #CFB997), Charcoal (#2B2B2B), and White (#FFFFFF).
+   - Verified and integrated image assets inside files/images/ (logo.png, spa.jpg, etiquette.jpg, dogImage.png, collars.jpg, dogBasket.png, treats.jpg, vs coffe.jpg).
 
-2. Wireframing & Page Architecture (pages/about.html):
-   - Structured semantic sections: Shared Navigation, Hero Header, Company History/Our Story (2-column grid), Our Mission callout, Core Values (4-card grid), and Call-to-Action Banner.
-   - Linked relative paths (../CSS/styles.css, ../index.html, products.html, contact.html) to match the repository folder structure.
+2. Wireframing & Page Architecture (files/pages/about.html):
+   - Structured semantic HTML5 sections (<nav>, <header>, <main>, <section>, <article>, <footer>) for consistent page inheritance across the site.
+   - Built full-width alternating White (.band-white) and Warm Cream (.band-cream) section bands to create clear visual breaks:
+     * Hero Header with high-contrast overlay (spa.jpg)
+     * Our Story (2-column side-by-side layout pairing company history with dogImage.png)
+     * Our Mission (elevated callout card)
+     * Our Core Values (4-card responsive grid)
+     * Meet Our Specialists (4-card team grid with avatar badges)
+     * Call-to-Action Banner (etiquette.jpg overlay with links to Products and Contact)
+   - Updated relative paths (../CSS/styles.css, ../../index.html, products.html, contact.html, ../images/...) after the repository restructure into files/.
 
-3. Responsive CSS Styling (CSS/styles.css):
-   - Added scoped About Us classes and CSS variables matching the group palette.
-   - Implemented responsive breakpoints (@media max-width: 900px and 650px) for tablet and mobile viewports.
+3. Shared CSS Styling & Cross-Page Consistency (files/CSS/styles.css & Site Pages):
+   - Added scoped About Us classes (.band-white, .band-cream, .about-grid, .mission-box, .values-grid, .value-card, .specialist-badge, .about-banner) to files/CSS/styles.css.
+   - Fixed CSS syntax issues and implemented responsive media query breakpoints (950px, 800px, and 600px) so multi-column grids adapt smoothly into 2-column tablet and 1-column mobile layouts.
+   - Assisted with visual layout consistency across index.html, files/pages/contact.html, and files/pages/products.html using matching alternating white/cream section bands, structured cards, and a 9-card (3x3) product layout.
 
-4. Version Control (Git & GitHub):
-   - Cloned shared repository, pulled updates from main, staged personal deliverables, and pushed commits to origin/main.
+4. Version Control & Testing (Git, GitHub & Browser DevTools):
+   - Cloned the shared GitHub repository, configured local Git author identity ("Rahil"), pulled teammate updates from origin/main, resolved folder structure path updates, and pushed incremental commits.
+   - Tested desktop and mobile responsiveness using browser Developer Tools (Device Toolbar) and verified all internal navigation and button links across pages.

@@ -47,6 +47,7 @@ header h2 {
 nav {
   background-color: #37461fd0;
   padding: 10px 0;
+  min-height: 75px;
 }
 
 nav .nav-container {
@@ -79,49 +80,81 @@ nav a:hover {
   color: #ffffffb6;
 }
 
+nav a.active {
+  background-color: #37461f79;
+  color: #ffffff;
+  font-weight: 600;
+}
+
 nav .logo {
   display: flex;
   align-items: center;
-  gap: 12px; /* Adds space between the paw logo and the text */
+  gap: 12px;
   text-decoration: none;
+}
+
+nav .logo img {
+  height: 55px;
+  width: auto;
 }
 
 nav .logo .brand-name {
   color: white;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.25rem;
   letter-spacing: 1px;
 }
 
-.card {
-  position: relative;
-}
-
+/* Cards */
 .card {
   display: grid;
   gap: 1rem;
   background-color: #556b2fa4;
   color: white;
   border: solid thin white;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Makes the scaling smooth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* This triggers when your mouse hovers over any card */
-/* This triggers when your mouse hovers over any card */
 .card:hover {
-  transform: scale(1.03); /* Gently increases the card size by 3% */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a subtle depth shadow */
-  z-index: 10; /* Ensures the hovered card pops above neighboring cards */
-  cursor: pointer; /* Changes the cursor to a clicking hand */
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.card .cardTitle {
+  margin-inline: 1rem;
 }
 
 .card .cardText {
   margin-bottom: 1rem;
   margin-inline: 1rem;
-  padding-right: 60px; /* Leaves clear space for the price tag so text won't slide under it */
+  padding-right: 60px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card .cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  margin-inline: auto;
 }
 
 .price-tag {
@@ -135,13 +168,13 @@ nav .logo .brand-name {
   font-weight: 600;
   font-size: 0.95rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 2; /* Keeps the price tag cleanly on top */
+  z-index: 2;
 }
 
-nav a.active {
-  background-color: #37461f79; /* A darker/highlighted green background */
-  color: #ffffff; /* Brighter text color */
-  font-weight: 600; /* Optional: makes it bold */
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -161,6 +194,13 @@ nav a.active {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
 footer {
   background-color: #161616;
   min-height: 300px;
@@ -190,6 +230,7 @@ footer li {
   list-style: none;
 }
 
+/* General Layout & Utility Classes */
 section {
   padding: 1rem;
   margin-bottom: 5dvw;
@@ -240,74 +281,21 @@ section {
   transition: all 0.3s ease;
 }
 
-.filter-btn:hover, 
+.filter-btn:hover,
 .filter-btn.active {
   background-color: #37461f;
   color: white;
 }
 
-nav {
-  min-height: 75px;
-}
-
-nav .logo img {
-  height: 55px;
-  width: auto;
-}
-
-nav .logo .brand-name {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
-}
-
-.card {
-  display: grid;
-  gap: 1rem;
-  background-color: #556b2fa4;
-  color: white;
-  border: solid thin white;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.card .cardTitle {
-  margin-inline: 1rem;
-}
-
-.card .cardText {
-  margin-bottom: 1rem;
-  margin-inline: 1rem;
-}
-
-.cardImage {
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
-}
-
-.card .cardImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.cardContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  width: 100%;
-  margin-inline: auto;
-}
-
+/* Homepage Styles */
 .homepage-intro {
   text-align: center;
-  padding: 50px 20px;
+  padding: 30px 10px;
 }
 
-.homepage-intro h2{
-color: #344e41;
-margin-bottom: 20px;
+.homepage-intro h2 {
+  color: #344e41;
+  margin-bottom: 20px;
 }
 
 .homepage-intro p {
@@ -324,7 +312,6 @@ margin-bottom: 20px;
 }
 
 .feature {
-  flex: 1;
   padding: 25px;
   background-color: #f0eee7;
   border-radius: 10px;
@@ -332,7 +319,7 @@ margin-bottom: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.feature:hover{
+.feature:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
@@ -357,161 +344,268 @@ margin-bottom: 20px;
 .homepage-button {
   display: inline-block;
   padding: 13px 25px;
-  background-color: #344e41;
+  background-color: #3F4A26;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
 .homepage-button:hover {
-  background-color: #588157;
+  background-color: #697448;
+  transform: translateY(-3px);
 }
 
 @media screen and (max-width: 768px) {
   .homepage-features {
-   grid-template-columns: 1fr;
-  } 
-}
-
-@media screen and (max-width: 768px) {
-  .cardContainer{
-    grid-template-columns: repeat(2, 1fr);
-  }  
-}
-
-@media screen and (max-width: 500px) {
-  .cardContainer{
     grid-template-columns: 1fr;
   }
 }
 
+<<<<<<< HEAD
 .homepage-intro {
   padding: 30px 10px;
 }
 
 
+=======
+>>>>>>> 088c39f977b5e1ee5e4df7bf341974209c4c61a0
 /* =========================================
-   ABOUT US PAGE STYLES (pages/about.html)
+   ABOUT US PAGE STYLES (files/pages/about.html)
    ========================================= */
-.about-story-grid {
+.band-white {
+  background-color: #ffffff;
+  padding: 4rem 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ece4d8;
+}
+
+.band-cream {
+  background-color: #f7f3eb;
+  padding: 4rem 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6dccb;
+}
+
+.section-tag {
+  display: inline-block;
+  background-color: #f0eee7;
+  color: #37461f;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 0.85rem;
+}
+
+.section-heading {
+  color: #2b3818;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #555555;
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.about-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 2.5rem;
+  gap: 3rem;
   align-items: center;
-  padding: 2.5rem 0;
 }
 
-.about-story-grid img {
-  display: block;
+.about-text h2 {
+  color: #2b3818;
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1.1rem;
+}
+
+.about-text p {
+  color: #333333;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 1.02rem;
+}
+
+.about-image img {
   width: 100%;
-  max-height: 340px;
+  height: 360px;
   object-fit: cover;
-  border-radius: 12px;
-}
-
-@media screen and (width < 850px) {
-  .about-story-grid {
-    grid-template-columns: 1fr;
-  }
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 .mission-box {
-  background-color: #f7f3eb;
-  border-left: 5px solid #4e5d38;
-  padding: 2rem;
-  border-radius: 10px;
-  margin: 1.5rem 0 3rem;
+  background-color: #ffffff;
+  border-left: 6px solid #37461f;
+  padding: 2.75rem 2.5rem;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
-.values-grid,
-.team-grid {
+.mission-box h2 {
+  color: #2b3818;
+  font-size: 1.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.mission-box p {
+  color: #333333;
+  font-size: 1.12rem;
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.values-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
-.value-card,
-.team-card {
+.value-card {
   background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6dfd5;
+  border-top: 4px solid #37461f;
+  border-radius: 12px;
+  padding: 2rem 1.35rem;
   text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .value-card i {
-  font-size: 1.75rem;
-  color: #4e5d38;
+  font-size: 2rem;
+  color: #37461f;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  color: #2b3818;
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.value-card p {
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.specialist-badge {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #37461f;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1rem;
+}
+
+.specialist-role {
+  display: block;
+  color: #6b5b3e;
+  font-weight: 600;
+  font-size: 0.88rem;
   margin-bottom: 0.75rem;
 }
 
-.cta-banner {
-  background-color: #3f4d2d;
-  color: #ffffff;
+.about-banner {
+  border-radius: 16px;
+  padding: 3.5rem 2rem;
   text-align: center;
-  padding: 3rem 1.5rem;
-  border-radius: 12px;
-  margin: 3rem 0;
-}
-
-.cta-banner h2,
-.cta-banner p {
   color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-.cta-buttons {
+.banner-content h2 {
+  color: #ffffff;
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.banner-content p {
+  color: #f0eee7;
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin: 0 auto 1.75rem;
+  line-height: 1.6;
+}
+
+.banner-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 1.25rem;
 }
 
-.cta-buttons a {
-  background-color: #d6c39c;
-  color: #1f2419;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Responsive Breakpoints (Professor's Range Syntax) */
-@media screen and (width < 900px) {
-  .about-story-grid {
-    grid-template-columns: 1fr;
-  }
-  .values-grid,
-  .team-grid {
+.btn-primary {
+  background-color: #cfb997;
+  color: #1f2419;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #2b3818;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+@media screen and (width < 950px) {
+  .values-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (width < 650px) {
-  .values-grid,
-  .team-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 2.5rem;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.about-image img {
-  display: block;
-  width: 100%;
-  max-height: 340px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-@media screen and (width < 850px) {
+@media screen and (width < 800px) {
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image img {
+    height: 260px;
+  }
+}
+
+@media screen and (width < 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .band-white,
+  .band-cream {
+    padding: 2.75rem 1rem;
   }
 }
