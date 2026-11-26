@@ -389,66 +389,6 @@ margin-bottom: 20px;
   padding: 30px 10px;
 }
 
-<<<<<<< HEAD:CSS/styles.css
-/* Homepage improvements */
-
-header {
-    min-height: 300px;
-    height: auto;
-    padding: 45px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-header h1,
-header h2 {
-    color: white;
-}
-
-header h1 {
-    font-size: 42px;
-}
-
-header p {
-    max-width: 650px;
-    line-height: 1.8;
-}
-
-.homepage-button {
-    display: inline-block;
-    background-color: #3F4A26;
-    color: white;
-    padding: 13px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
-
-.homepage-button:hover {
-    background-color: #697448;
-    transform: translateY(-3px);
-}
-
-.card {
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.cardImage img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-=======
 
 /* =========================================
    ABOUT US PAGE STYLES (pages/about.html)
@@ -574,5 +514,4 @@ header p {
   .about-grid {
     grid-template-columns: 1fr;
   }
->>>>>>> e862b74096e68ed37cfd489857463598199a8468:files/CSS/styles.css
 }
