@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 img {
@@ -163,7 +163,7 @@ nav a.active {
 
 footer {
   background-color: #161616;
-  height: 300px;
+  min-height: 300px;
   margin-top: 2rem;
   color: white;
   padding: 1rem;
@@ -246,6 +246,20 @@ section {
   color: white;
 }
 
+nav {
+  min-height: 75px;
+}
+
+nav .logo img {
+  height: 55px;
+  width: auto;
+}
+
+nav .logo .brand-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+}
+
 .card {
   display: grid;
   gap: 1rem;
@@ -303,7 +317,7 @@ margin-bottom: 20px;
 
 .homepage-features {
   display: grid;
-  grid-template-columns: repeat(3, lfr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin: 35px 0;
 }
@@ -352,21 +366,21 @@ margin-bottom: 20px;
   background-color: #588157;
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .homepage-features {
-   grid-template-columns: lfr;
+   grid-template-columns: 1fr;
   } 
 }
 
 @media screen and (max-width: 768px) {
   .cardContainer{
-    grid-template-columns: repeat(2, lfr);
+    grid-template-columns: repeat(2, 1fr);
   }  
 }
 
 @media screen and (max-width: 500px) {
   .cardContainer{
-    grid-template-columns: lfr;
+    grid-template-columns: 1fr;
   }
 }
 
