@@ -63,6 +63,24 @@ For the Artisanal, Small-Batch Functional Treats:
 
         Boutique Angle: Sold unpackaged in a stylish "barkery" deli case where owners can mix-and-match treats by weight in custom stamped paper bags.
 
+=============================================================================
+INTRODUCTION, TARGET AUDIENCE AND COMPETITOR RESEARCH (Tobi - Person 1)
+=============================================================================
+
+1. Introduction: URBAN PAWS is an online pet shop website designed to make shopping 
+for pet products simple and convenient. The website provides customers with accessibilityto pet accessories, grooming products and 
+everyday pet care essentials.
+
+2. Target Audience Research: The main target audience for URBAN PAWS is pet owners, particularly
+young adults aged 18-45. Our website is designed to appeal to this audiencethrough a simple layout, clear product categories, attractive images and easy-to-use navigation.
+
+3.Competitor Research: We considered three competitors when researching URBAN PAWS: 
+  -Pets at Home
+  -Petstop
+  -Zooplus
+
+  Researching these competitors helped identify useful website features, including
+  simple navigation and attractive product displays. These features helped influence the design of URBAN PAWS.
 
 
 
@@ -87,21 +105,3 @@ The Urban Paws brand identity was designed to communicate warmth, reliability, a
 The About Us page (pages/about.html) was built using semantic HTML5 (<nav>, <header>, <main>, <section>, <article>, <footer>) and styled in CSS/styles.css using CSS Grid and Flexbox. Media queries at 900px and 650px adapt the two-column story layout and four-column core values grid into two-column tablet and single-column mobile views.
 
 
-=============================================================================
-INTRODUCTION, TARGET AUDIENCE AND COMPETITOR RESEARCH (Tobi - Person 1)
-=============================================================================
-
-1. Introduction: URBAN PAWS is an online pet shop website designed to make shopping 
-for pet products simple and convenient. The website provides customers with accessibilityto pet accessories, grooming products and 
-everyday pet care essentials.
-
-2. Target Audience Research: The main target audience for URBAN PAWS is pet owners, particularly
-young adults aged 18-45. Our website is designed to appeal to this audiencethrough a simple layout, clear product categories, attractive images and easy-to-use navigation.
-
-3.Competitor Research: We considered three competitors when researching URBAN PAWS: 
-  -Pets at Home
-  -Petstop
-  -Zooplus
-
-  Researching these competitors helped identify useful website features, including
-  simple navigation and attractive product displays. These features helped influence the design of URBAN PAWS.
