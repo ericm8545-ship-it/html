@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +13,197 @@
 <link rel="stylesheet" href="../CSS/styles.css">
 
 <style>
-header {
-    background-image: url(../images/background.jpeg);
-    background-size: cover;
-    background-position: bottom center;
-    height: 150px;
+/* Override any 5dvw section gaps on the home page */
+body {
+  background-color: #CFB997;
+  margin: 0;
+  padding: 0;
 }
 
-.pic1 {
-    background-image: url(../images/background2.webp);
-    background-size: cover;
-    height: 150px;
+header {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 220px;
+  padding: 2.5rem 1.5rem;
+  background-image:
+    linear-gradient(rgba(22, 28, 18, 0.6), rgba(22, 28, 18, 0.6)),
+    url("../images/background.jpeg");
+  background-size: cover;
+  background-position: bottom center;
+  color: #ffffff;
+}
+
+header h1,
+header h2 {
+  color: #ffffff;
+  margin: 0;
+}
+
+header p {
+  margin: 0.6rem auto 1.25rem;
+  color: #f0eee7;
+}
+
+/* 1. White & cream section breakers behind plain text */
+.home-white-band,
+.home-cream-band {
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  margin: 0;
+}
+
+.home-white-band {
+  background-color: #ffffff;
+  color: #1f2419;
+  border-bottom: 1px solid #e8dfd1;
+}
+
+.home-cream-band {
+  background-color: #f7f3eb;
+  color: #1f2419;
+  border-bottom: 1px solid #e4d8c5;
+}
+
+.home-white-band h2,
+.home-cream-band h2 {
+  color: #2b3818;
+  margin-bottom: 0.75rem;
+}
+
+.why-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+/* 2. Uniform dog image size & framing */
+.homepage-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.feature img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* 3. Aligned coffee image beside text */
+.coffee-story-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.coffee-aligned-img {
+  width: 220px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-story-text p {
+  margin-bottom: 0.75rem;
+}
+
+.coffee-story-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* 4. 9 cards in a continuous moving ribbon (10th card removed) */
+.ribbon-viewport {
+  overflow: hidden;
+  width: 100%;
+  padding: 0.5rem 0 1rem;
+}
+
+.ribbon-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: ribbon-scroll 34s linear infinite;
+}
+
+.ribbon-track:hover {
+  animation-play-state: paused;
+}
+
+.ribbon-track .card {
+  flex: 0 0 280px;
+  display: grid;
+  gap: 0.75rem;
+  background-color: #556b2fa4;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ribbon-track .cardImage {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.ribbon-track .cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ribbon-track .cardTitle,
+.ribbon-track .cardText {
+  margin-inline: 1rem;
+}
+
+.ribbon-track .cardText {
+  margin-bottom: 1rem;
+}
+
+@keyframes ribbon-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .why-three-cols,
+  .homepage-features {
+    grid-template-columns: 1fr;
+  }
+
+  .coffee-story-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .coffee-aligned-img {
+    width: 100%;
+    max-width: 280px;
+    height: 190px;
+  }
 }
 </style>
 
@@ -37,111 +216,198 @@ header {
     <h1>Welcome to URBAN PAWS</h1>
     <h2>Everything Your Pet Deserves.</h2>
     <p>Quality products, accessories and care for your furry friends.</p>
-    <a href="products.html" class="homepage-button">
-        Explore Our Products
-    </a>
+    <a href="products.html" class="homepage-button">Explore Our Products</a>
 </header>
 
-<div class="wrapper">
-<section>
-<h2>About</h2>
-<p>
-At URBAN PAWS, we believe pets deserve the very best care. We are passionate about
-helping pet owners keep their furry companions happy, healthy and comfortable.
-From quality accessories to professional grooming services, we aim to make
-everyday pet care easier for everyone.
-</p>
-</section>
-</div>
-
-<section class="dark">
-<div class="wrapper center">
-<h2>Our Ethos</h2>
-<p>
-Our mission is to improve the lives of pets and their owners by providing reliable
-services and carefully selected products. We value quality, comfort and care,
-and believe every pet deserves to feel loved and looked after.
-</p>
-</div>
-</section>
-
-<section>
-<h2 class="center">Why Choose URBAN PAWS?</h2>
-<div class="columns wrapper">
-    <p>Quality Products: We offer carefully selected accessories and treats for your pets.</p>
-    <p>Professional Grooming: Our grooming services help pets look and feel their best.</p>
-    <p>Pet-Focused Care: We put the comfort, happiness and wellbeing of pets first.</p>
-</div>
-</section>
-
-<section class="pic1"></section>
-
-<section class="wrapper">
-<div class="homepage-intro">
-
-    <h2>Happy Pets. Happier Lives.</h2>
-
-    <p>
-        At URBAN PAWS, we believe every pet deserves
-        the best. Our aim is to make life easier and
-        happier for pets and their owners through
-        quality products, accessories and pet care.
-    </p>
-
-    <h2>Discover What We Offer</h2>
-
-    <div class="homepage-features">
-
-        <div class="feature">
-            <img src="../images/collars.jpg" alt="Pet collars and accessories">
-            <h3>Pet Accessories</h3>
-            <p>Discover stylish and practical accessories to keep your pets comfortable.</p>
-        </div>
-
-        <div class="feature">
-            <img src="../images/spa.jpg" alt="Professional dog grooming">
-            <h3>Pet Grooming</h3>
-            <p>Keep your furry friends clean, fresh and looking their best.</p>
-        </div>
-
-        <div class="feature">
-            <img src="../images/dogImage.png" alt="Dog receiving everyday care">
-            <h3>Everyday Pet Care</h3>
-            <p>Find essential products to support your pet's everyday needs.</p>
-        </div>
-
+<section class="home-white-band">
+    <div class="wrapper">
+        <h2>About</h2>
+        <p>
+            At URBAN PAWS, we believe pets deserve the very best care. We are passionate about
+            helping pet owners keep their furry companions happy, healthy and comfortable.
+            From quality accessories to professional grooming services, we aim to make
+            everyday pet care easier for everyone.
+        </p>
     </div>
-
-    <a href="products.html" class="homepage-button">
-        Explore Our Products
-    </a>
-
-</div>
 </section>
 
-<section class="wrapper">
-<h2>More Stuff Here</h2>
-
-<p>
-At URBAN PAWS, we understand that pets are more than just animals - they are part
-of the family. That's why we are dedicated to providing products and services
-that help keep your pets happy, healthy and comfortable.
-<img src="../images/vs coffe.jpg" width="150px" class="left" alt="Pet care">
-</p>
-
-<p>
-We believe that every pet deserves attention, love and the right care. With
-URBAN PAWS, you can find everything you need to give your companion the happy
-and healthy lifestyle they deserve.
-</p>
+<section class="home-cream-band">
+    <div class="wrapper center">
+        <h2>Our Ethos</h2>
+        <p>
+            Our mission is to improve the lives of pets and their owners by providing reliable
+            services and carefully selected products. We value quality, comfort and care,
+            and believe every pet deserves to feel loved and looked after.
+        </p>
+    </div>
 </section>
 
-<section>
-<div class="cardContainer">
+<section class="home-white-band">
+    <div class="wrapper">
+        <h2 class="center">Why Choose URBAN PAWS?</h2>
+        <div class="why-three-cols">
+            <p><strong>Quality Products:</strong> We offer carefully selected accessories and treats for your pets.</p>
+            <p><strong>Professional Grooming:</strong> Our grooming services help pets look and feel their best.</p>
+            <p><strong>Pet-Focused Care:</strong> We put the comfort, happiness and wellbeing of pets first.</p>
+        </div>
+    </div>
+</section>
 
-    <!-- Keep your original ten product cards here -->
+<section class="home-cream-band">
+    <div class="wrapper homepage-intro">
+        <h2>Happy Pets. Happier Lives.</h2>
+        <p>
+            At URBAN PAWS, we believe every pet deserves the best. Our aim is to make life easier
+            and happier for pets and their owners through quality products, accessories and pet care.
+        </p>
 
-</div>
+        <h2>Discover What We Offer</h2>
+
+        <div class="homepage-features">
+            <div class="feature">
+                <img src="../images/collars.jpg" alt="Pet collars and accessories">
+                <h3>Pet Accessories</h3>
+                <p>Discover stylish and practical accessories to keep your pets comfortable.</p>
+            </div>
+
+            <div class="feature">
+                <img src="../images/spa.jpg" alt="Professional dog grooming">
+                <h3>Pet Grooming</h3>
+                <p>Keep your furry friends clean, fresh and looking their best.</p>
+            </div>
+
+            <div class="feature">
+                <img src="../images/dogImage.png" alt="Dog receiving everyday care">
+                <h3>Everyday Pet Care</h3>
+                <p>Find essential products to support your pet's everyday needs.</p>
+            </div>
+        </div>
+
+        <a href="products.html" class="homepage-button">Explore Our Products</a>
+    </div>
+</section>
+
+<section class="home-white-band">
+    <div class="wrapper coffee-story-row">
+        <img src="../images/vs coffe.jpg" alt="Pet care and coffee moment at Urban Paws" class="coffee-aligned-img">
+        <div class="coffee-story-text">
+            <h2>More Stuff Here</h2>
+            <p>
+                At URBAN PAWS, we understand that pets are more than just animals - they are part
+                of the family. That's why we are dedicated to providing products and services
+                that help keep your pets happy, healthy and comfortable.
+            </p>
+            <p>
+                We believe that every pet deserves attention, love and the right care. With
+                URBAN PAWS, you can find everything you need to give your companion the happy
+                and healthy lifestyle they deserve.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="home-cream-band">
+    <div class="wrapper">
+        <h2 class="center" style="margin-bottom: 1.25rem;">Featured Range</h2>
+
+        <div class="ribbon-viewport">
+            <div class="ribbon-track">
+                <!-- 9 cards (10th card removed) -->
+                <div class="card">
+                    <div class="cardImage"><img src="../images/accessories.jpg" alt="Pet Accessories"></div>
+                    <div class="cardTitle"><h2>Pet Accessories</h2></div>
+                    <div class="cardText"><p>Stylish and practical accessories for everyday comfort.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/grooming.jpg" alt="Grooming Services"></div>
+                    <div class="cardTitle"><h2>Grooming Services</h2></div>
+                    <div class="cardText"><p>Gentle, professional grooming tailored to your pet.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/treats.jpg" alt="Healthy Treats"></div>
+                    <div class="cardTitle"><h2>Healthy Treats</h2></div>
+                    <div class="cardText"><p>Wholesome snacks made with natural ingredients.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/mealPlan.jpg" alt="Quality Pet Food"></div>
+                    <div class="cardTitle"><h2>Quality Pet Food</h2></div>
+                    <div class="cardText"><p>Balanced nutrition to keep energy levels high.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/toy.webp" alt="Toys and Entertainment"></div>
+                    <div class="cardTitle"><h2>Toys &amp; Entertainment</h2></div>
+                    <div class="cardText"><p>Engaging playtime toys for mental stimulation.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/dog bed.jpg" alt="Comfortable Pet Beds"></div>
+                    <div class="cardTitle"><h2>Comfortable Pet Beds</h2></div>
+                    <div class="cardText"><p>Cozy resting spots for restful sleep.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/collars.jpg" alt="Stylish Pet Accessories"></div>
+                    <div class="cardTitle"><h2>Stylish Pet Accessories</h2></div>
+                    <div class="cardText"><p>Durable collars, leads, and everyday essentials.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/care.jpg" alt="Grooming Essentials"></div>
+                    <div class="cardTitle"><h2>Grooming Essentials</h2></div>
+                    <div class="cardText"><p>Coat and hygiene care for home maintenance.</p></div>
+                </div>
+                <div class="card">
+                    <div class="cardImage"><img src="../images/orthopodeic.jpg" alt="Orthopedic Care"></div>
+                    <div class="cardTitle"><h2>Everyday Support</h2></div>
+                    <div class="cardText"><p>Supportive care designed for long-term wellbeing.</p></div>
+                </div>
+
+                <!-- Duplicate set of 9 cards for seamless loop -->
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/accessories.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Pet Accessories</h2></div>
+                    <div class="cardText"><p>Stylish and practical accessories for everyday comfort.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/grooming.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Grooming Services</h2></div>
+                    <div class="cardText"><p>Gentle, professional grooming tailored to your pet.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/treats.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Healthy Treats</h2></div>
+                    <div class="cardText"><p>Wholesome snacks made with natural ingredients.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/mealPlan.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Quality Pet Food</h2></div>
+                    <div class="cardText"><p>Balanced nutrition to keep energy levels high.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/toy.webp" alt=""></div>
+                    <div class="cardTitle"><h2>Toys &amp; Entertainment</h2></div>
+                    <div class="cardText"><p>Engaging playtime toys for mental stimulation.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/dog bed.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Comfortable Pet Beds</h2></div>
+                    <div class="cardText"><p>Cozy resting spots for restful sleep.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/collars.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Stylish Pet Accessories</h2></div>
+                    <div class="cardText"><p>Durable collars, leads, and everyday essentials.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/care.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Grooming Essentials</h2></div>
+                    <div class="cardText"><p>Coat and hygiene care for home maintenance.</p></div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <div class="cardImage"><img src="../images/orthopodeic.jpg" alt=""></div>
+                    <div class="cardTitle"><h2>Everyday Support</h2></div>
+                    <div class="cardText"><p>Supportive care designed for long-term wellbeing.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 </body>
